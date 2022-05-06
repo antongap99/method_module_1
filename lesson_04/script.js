@@ -1,5 +1,7 @@
 'use strict'
 
+
+
 {
     const item = 'smart проектор philips';
     const count = 15;
@@ -23,15 +25,26 @@
 
 {
     const answer_item = prompt("Какой товар инересует?", 'часы');
-    const answer_count = Number(prompt("Сколько на склада?", '20'));
+    const answer_count = Number(prompt("Сколько на склада?", 20));
     const answer_category = prompt("Категория?", 'электроника');
-    const answer_price = Number(prompt("цена одного товара?", '10000'));
+    const answer_price = Number(prompt("цена одного товара?", 10000));
     
-    console.log('swer_item: ', typeof swer_item);
-    console.log('answer_count : ', typeof answer_count );
-    console.log('answer_category: ', typeof answer_category);
-    console.log('answer_price: ', typeof answer_price);
+
     
+    function isNumber(answer1, answer2){
+        if(Number.isNaN(answer1)|| Number.isNaN(answer2)){
+            
+            console.log('Вы ввели некорректные данные');
+        } else{
+            console.log(`%c На складе ${answer_count} единицы товара ${answer_item} на сумму ${answer_price} деревянных.`, "color: green;");
+        }
+    }
+
+
+
+    isNumber(answer_count, answer_price);
     
-    console.log(`%c На складе ${answer_count} единицы товара ${answer_item} на сумму ${answer_price} деревянных.`, "color: green;");
 }
+
+
+

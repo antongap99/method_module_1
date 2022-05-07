@@ -11,7 +11,7 @@ function payTax(data){
             console.log('Налог равен 20%');
         }
         if( data >= 50000){
-            console.log('Налог равен 20%');
+            console.log('Налог равен 30%');
         };
     } else  {
         console.log('Вы ввели некорректные данные');

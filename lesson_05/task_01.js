@@ -1,8 +1,9 @@
 "use strict";
 
-const currencyExchange = (money) => {
-
-return money * 73;
+const currencyExchange = (euro) => {
+let dollar =  euro / 1.2;
+let ruble = 73 * dollar;
+return Math.round(ruble);
 
 }
-//console.log(currencyExchange(4));
+console.log(currencyExchange(4));

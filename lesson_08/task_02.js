@@ -10,7 +10,7 @@ const generateRandonArray = (numb, n, m) => {
     for(let i = 1; i < numb; i++){
         array.push(i)
     }
-    //console.log('array: ', array);
+    //aadd .console.log('array: ', array);
     
     if(n > m){
         max = n;

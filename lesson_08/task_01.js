@@ -14,10 +14,6 @@ const generateRandonArray = (numb) => {
     
     
     let arr = array.map((num) => {
-
-        let newNum = Boolean(num);
-        Boolean(num);
-
         return Math.round(Math.random() * 100)
     })
 

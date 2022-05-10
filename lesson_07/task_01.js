@@ -16,8 +16,4 @@ const filter = (allStudents, faildStudents) => {
 }
 console.log(filter(students, failed));
 
-
-
-
-
 }

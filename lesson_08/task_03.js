@@ -56,7 +56,7 @@ const generateRandonArray = (numb, n, m, option) => {
 }
     
 
-console.log(generateRandonArray(15, -5, -100, 'odd'))
-console.log(generateRandonArray(15, -5, -100, 'even'))
+//console.log(generateRandonArray(15, -5, -100, 'odd'))
+//console.log(generateRandonArray(15, -5, -100, 'even'))
 
 }

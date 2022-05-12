@@ -30,6 +30,6 @@ const generateRandonArray = (numb, n, m) => {
     return arr
 }
 
-console.log(generateRandonArray(15, -5, -100))
+//console.log(generateRandonArray(15, -5, -100))
 
 }

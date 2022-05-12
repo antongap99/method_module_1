@@ -21,6 +21,7 @@ const generateRandonArray = (numb) => {
     return arr
 }
 
-console.log(generateRandonArray(15))
+//console.log(generateRandonArray(15))
 
 }
+

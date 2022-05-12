@@ -37,5 +37,5 @@
         alert('Правильно');
     }
     
-    guessTheNumber()
+   // guessTheNumber()
 }

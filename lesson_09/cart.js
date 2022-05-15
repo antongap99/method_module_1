@@ -42,19 +42,25 @@ const cart = {
 }
 
 
-
+//добавление товаров
 cart.add('apple', 100000, 3);
 cart.add('asus', 50000, 10);
 cart.add('gygabite', 100000, 10);
 
+//проверка
 console.log(cart.items);
-
 console.log( cart.count);
-
 console.log(cart.totalPrice);
-//console.log( cart.getTotalPirce());
+console.log( cart.getTotalPirce());
 
+//Получение JSON строки
+cart.print();
+//Очистка
+cart.clear();
 
+console.log(cart.items);
+console.log( cart.count);
+console.log(cart.totalPrice);
 
 
 }

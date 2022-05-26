@@ -39,7 +39,7 @@
                 continue;
             }
             // если число уже вводили
-            if(userPrompt.includes(numberOfUser)){
+            if(userPrompt.includes(Number(numberOfUser))){
                 alert('Это число вы уже вводили!');
                 continue;
             }

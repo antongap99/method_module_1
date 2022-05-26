@@ -6,16 +6,20 @@
     const category = 'видео техника';
     const price = 1200;
 
-    console.log(item);
-    console.log(`общая сумма товара: ${count * price}`);
+   // console.log(item);
+   // console.log(`общая сумма товара: ${count * price}`);
 }
 
 {
     const item = 'Телевизор Samsumg';
-    const count = 10
+    const count = 10;
     const category = 'видео техника';
     const price = 30000;
 
-    console.log(item);
-    console.log(`общая сумма товара: ${count * price}`);
+   // console.log(item);
+   // console.log(`общая сумма товара: ${count * price}`);
 }
+
+let num = 124;
+let num2 = null;
+console.log(typeof( 'Stas'));

@@ -3,12 +3,13 @@
   const FIGURES_ENG = ['rock', 'scissors', 'paper'];
   const FIGURES_RUS = ['камень', 'ножницы', 'бумага'];
 
-
   const getRandomIntInclusive = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
+
+  
 
   const game = (language) => {
     const result = {
@@ -24,6 +25,14 @@
         let playerAnswer = '';
         let Answer = '';
         lang[comp][0].toLowerCase();
+
+        const willPlay = () => {
+          if (confirm('Еще?')) {
+            return start();
+          } else {
+            return;
+          }
+        }
 
         if (language === 'EN' || language === 'ENG') {
           Answer = prompt('rock, scissors,paper ?', 'камень');
@@ -57,11 +66,7 @@
             alert('Ничья');
             alert(
               `Cчет:\n Компютер: ${result.computer} \n вы: ${result.player}`);
-            if (confirm('Еще?')) {
-              return start();
-            } else {
-              return;
-            }
+            willPlay();
           }
 
           if (com[0] === 'к' && play[0] === 'н') {
@@ -69,22 +74,14 @@
             result.computer += 1;
             alert(
               `Cчет:\n Компютер: ${result.computer} \n вы: ${result.player}`);
-            if (confirm('Еще?')) {
-              return start();
-            } else {
-              return;
-            }
+            willPlay();
           }
           if (com[0] === 'н' && play[0] === 'к') {
             alert(`Компютер: ножницы\n Вы: камень \n вы выиграли`);
             result.player += 1;
             alert(
               `Cчет:\n Компютер: ${result.computer} \n вы: ${result.player}`);
-            if (confirm('Еще?')) {
-              return start();
-            } else {
-              return;
-            }
+            willPlay();
           }
 
           if (com[0] === 'б' && play[0] === 'к') {
@@ -92,22 +89,14 @@
             result.computer += 1;
             alert(
               `Cчет:\n Компютер: ${result.computer} \n вы: ${result.player}`);
-            if (confirm('Еще?')) {
-              return start();
-            } else {
-              return;
-            }
+            willPlay();
           }
           if (com[0] === 'к' && play[0] === 'б') {
             alert(`Компютер: камень\n Вы: бумага \n вы выиграли`);
             result.player += 1;
             alert(
               `Cчет:\n Компютер: ${result.computer} \n вы: ${result.player}`);
-            if (confirm('Еще?')) {
-              return start();
-            } else {
-              return;
-            }
+            willPlay();
           }
 
           if (com[0] === 'н' && play[0] === 'б') {
@@ -115,22 +104,14 @@
             result.computer += 1;
             alert(
               `Cчет:\n Компютер: ${result.computer} \n вы: ${result.player}`);
-            if (confirm('Еще?')) {
-              return start();
-            } else {
-              return;
-            }
+            willPlay();
           }
           if (com[0] === 'б' && play[0] === 'н') {
             alert(`Компютер: бумага\n Вы: ножницы \n вы выиграли`);
             result.player += 1;
             alert(
               `Cчет:\n Компютер: ${result.computer} \n вы: ${result.player}`);
-            if (confirm('Еще?')) {
-              return start();
-            } else {
-              return;
-            }
+            willPlay();
           }
         };
 
@@ -142,6 +123,14 @@
         let playerAnswer = '';
         let Answer = '';
         lang[comp][0].toLowerCase();
+
+        const willPlay = () => {
+          if (confirm('will you play again?')) {
+            return startEngilshVersion();
+          } else {
+            return;
+          }
+        }
 
 
         if (language === 'EN' || language === 'ENG') {
@@ -176,11 +165,7 @@
             alert('draw');
             alert(
               `Score:\n Computer: ${result.computer} \n You: ${result.player}`);
-            if (confirm('will you play again?')) {
-              return startEngilshVersion();
-            } else {
-              return;
-            }
+            willPlay();
           }
 
           if (com[0] === 'r' && play[0] === 's') {
@@ -188,22 +173,14 @@
             result.computer += 1;
             alert(
               `Score:\n Computer: ${result.computer} \n You: ${result.player}`);
-            if (confirm('will you play again?')) {
-              return startEngilshVersion();
-            } else {
-              return;
-            }
+            willPlay();
           }
           if (com[0] === 's' && play[0] === 'r') {
             alert(`Computer: scissors\n You: rock \n you won`);
             result.player += 1;
             alert(
               `Score:\n Computer: ${result.computer} \n You: ${result.player}`);
-            if (confirm('will you play again?')) {
-              return startEngilshVersion();
-            } else {
-              return;
-            }
+            willPlay();
           }
 
           if (com[0] === 'p' && play[0] === 'r') {
@@ -211,22 +188,14 @@
             result.computer += 1;
             alert(
               `Score:\n Computer: ${result.computer} \n You: ${result.player}`);
-            if (confirm('will you play again?')) {
-              return startEngilshVersion();
-            } else {
-              return;
-            }
+            willPlay();
           }
           if (com[0] === 'r' && play[0] === 'p') {
             alert(`Computer: rock\n You: paper \n you won`);
             result.player += 1;
             alert(
               `Score:\n Computer: ${result.computer} \n You: ${result.player}`);
-            if (confirm('will you play again?')) {
-              return startEngilshVersion();
-            } else {
-              return;
-            }
+            willPlay();
           }
 
           if (com[0] === 's' && play[0] === 'p') {
@@ -234,22 +203,14 @@
             result.computer += 1;
             alert(
               `Score:\n Computer: ${result.computer} \n You: ${result.player}`);
-            if (confirm('will you play again?')) {
-              return startEngilshVersion();
-            } else {
-              return;
-            }
+            willPlay();
           }
           if (com[0] === 'p' && play[0] === 's') {
             alert(`Computer: paper\n You: scissors \n you won`);
             result.player += 1;
             alert(
               `Score:\n Computer: ${result.computer} \n You: ${result.player}`);
-            if (confirm('will you play again?')) {
-              return startEngilshVersion();
-            } else {
-              return;
-            }
+            willPlay();
           }
         };
 

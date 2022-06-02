@@ -16,7 +16,7 @@
       player: 0,
       computer: 0,
     };
-    return function startRuVersion() {
+    return function start() {
       let figuresOption = 'figuresRus';
       let playerAnswer = '';
       let phraseLang = 'RU';
@@ -44,7 +44,7 @@
 
       if (!Answer) {
         if (confirm(phrase[phraseLang][6])) {
-          return startRuVersion();
+          return start();
         } else {
           alert(phrase[phraseLang][7]);
           return;
@@ -58,7 +58,7 @@
       }));
 
       if (!playerAnswer) {
-        return startRuVersion();
+        return start();
       }
 
       const compare = (com, play) => {
@@ -67,7 +67,7 @@
           alert(
             `${phrase[phraseLang][1]}:\n ${phrase[phraseLang][3]}:${result.computer} \n ${phrase[phraseLang][2]}: ${result.player}`);
           if (confirm(phrase[phraseLang][6])) {
-            return startRuVersion();
+            return start();
           } else {
             return;
           }
@@ -84,7 +84,7 @@
           alert(
             `${phrase[phraseLang][1]}:\n ${phrase[phraseLang][3]}:${result.computer} \n ${phrase[phraseLang][2]}: ${result.player}`);
           if (confirm(phrase[phraseLang][6])) {
-            return startRuVersion();
+            return start();
           } else {
             return;
           }
@@ -94,7 +94,7 @@
           alert(
             `${phrase[phraseLang][1]}:\n ${phrase[phraseLang][3]}:${result.computer}\n${phrase[phraseLang][2]}: ${result.player}`);
           if (confirm(phrase[phraseLang][6])) {
-            return startRuVersion();
+            return start();
           } else {
             return;
           }

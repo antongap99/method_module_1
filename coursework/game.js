@@ -80,15 +80,15 @@
           result.player += 1;
           marbleMove = 1;
           window.firstStep = marbleMove;
-          alert(
-            `${phrase[phraseLang][1]}:\n ${phrase[phraseLang][3]}:${result.computer} \n ${phrase[phraseLang][2]}: ${result.player}`);
+          // alert(
+          //   `${phrase[phraseLang][1]}:\n ${phrase[phraseLang][3]}:${result.computer} \n ${phrase[phraseLang][2]}: ${result.player}`);
         } else {
           alert(`${phrase[phraseLang][3]}: ${com}\n ${phrase[phraseLang][2]}:${play}\n ${phrase[phraseLang][4]}`);
           result.computer += 1;
           marbleMove = -1;
           window.firstStep = marbleMove;
-          alert(
-            `${phrase[phraseLang][1]}:\n ${phrase[phraseLang][3]}:${result.computer}\n${phrase[phraseLang][2]}: ${result.player}`);
+          // alert(
+          //   `${phrase[phraseLang][1]}:\n ${phrase[phraseLang][3]}:${result.computer}\n${phrase[phraseLang][2]}: ${result.player}`);
         }
       };
       compare(lang[comp], playerAnswer);

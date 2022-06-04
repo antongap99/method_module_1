@@ -49,7 +49,7 @@ window.gameMarble = (() => {
         } else {
           alert(`${pl1.name} выиграл!`);
           pl1.balls += pl1.number;
-          pl2.balls -= pl2.number;
+          pl2.balls -= pl1.number;
         }
         alert(`Число оставшихся шариков:
         Игрок: ${player.balls},
